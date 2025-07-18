@@ -1,0 +1,14 @@
+#signup{
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: aqua;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+body{
+    background-image: url(./paper-surrounded-with-mini-presents-shopping-carts.jpg);
+    background-size: cover;
+}

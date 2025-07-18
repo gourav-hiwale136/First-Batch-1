@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: black;
+  
+}
+
+#comman {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+#main div {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 320px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  background-image: linear-gradient(135deg, #328ef0, #4cee82);
+}
