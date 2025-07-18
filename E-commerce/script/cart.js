@@ -1,4 +1,4 @@
-let cart_arr = JSON.parse(localStorage.getItem("cart")) || [];
+let cart_arr = JSON.parse(localStorage.getItem("cartData")) || [];
 let container = document.getElementById("container");
 let total = document.getElementById("total");
 let total_value = 0;

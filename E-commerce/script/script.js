@@ -318,7 +318,7 @@ function display() {
     addcartbtn.innerText = "Add to Cart";
 
     addcartbtn.addEventListener("click", function () {
-      addcartfun(el);
+      addcartfun(el, addcartbtn);
     });
 
     let div = document.createElement("div");
@@ -326,7 +326,7 @@ function display() {
     main.append(div);
   });
 }
-function addcartfun(cartvalue) {
+function addcartfun(cartvalue,change) {
   // console.log("cart added")
   // console.log(cartvalue)
   let flag = false;
@@ -337,9 +337,19 @@ function addcartfun(cartvalue) {
   });
   if (flag == true) {
     alert("product is already added");
+    window.location.href="../html/cart.html"
   } else {
     cart_arr.push(cartvalue);
     alert("product is added to cart");
+    console.log(cart_arr);
+    change.innerText="Go to Cart";
+    
     localStorage.setItem("cartData", JSON.stringify(cart_arr));
   }
+
+
+  //  function (params) {
+    
+  //  }
+
 }
