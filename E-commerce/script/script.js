@@ -347,9 +347,4 @@ function addcartfun(cartvalue,change) {
     localStorage.setItem("cartData", JSON.stringify(cart_arr));
   }
 
-
-  //  function (params) {
-    
-  //  }
-
 }
