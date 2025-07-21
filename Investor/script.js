@@ -157,7 +157,7 @@ let investors = [
 let main = document.getElementById("main");
 
 for (let i = 0; i < investors.length; i++) {
-  console.log(investors[i]);
+  // console.log(investors[i]);
 
   let div = document.createElement("div");
   let img = document.createElement("img");
@@ -174,4 +174,4 @@ for (let i = 0; i < investors.length; i++) {
   main.append(div);
 }
 
-localStorage.setItem("main");
+localStorage.setItem( JSON.stringify(main));

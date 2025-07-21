@@ -12,4 +12,4 @@ function display() {
   main.append(showtime);
 }
 
-setInterval(display, 0);
+setInterval(display, 2000);
