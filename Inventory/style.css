@@ -1,0 +1,30 @@
+#create{
+    text-align: center;
+
+}
+
+form{
+    margin: auto;
+    display: grid;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(47, 204, 152);
+
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+}
+
+select{
+    border-radius: 10px;
+    border: none;
+}
+
+
+
