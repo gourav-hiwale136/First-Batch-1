@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", sans-serif;
+}
+
+body {
+	background-color: #f8f8f8;
+}
+
+/* Navbar Styling */
+#nav_bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 20px 40px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+/* Logo / Title */
+#nav_bar h2 {
+	font-size: 28px;
+	color: #1e88e5;
+}
+
+/* Filters Menu */
+#filter_products {
+	display: flex;
+	gap: 30px;
+	list-style: none;
+}
+#filter_products > li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 600px;
+}
+
+#filter_products h3 {
+	font-size: 18px;
+	color: #444;
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+#filter_products h3:hover {
+	color: #1e88e5;
+}
+
+#credentials_check {
+	height: 40px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#menu_section > img {
+	width: 60px;
+	height: 60px;
+}
+/* Main Container */
+.cart-container {
+	padding: 2rem;
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* Heading */
+.cart-container h1 {
+	margin-bottom: 1.5rem;
+}
+#main {
+	display: flex;
+	gap: 30px;
+	width: 95%;
+	margin: auto;
+	margin-top: 30px;
+}
+#cart_items {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: 70%;
+	padding: 50px;
+}
+#checkout_card {
+	padding-top: 30px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	width: 400px;
+	height: 300px;
+}
+
+#cart_heading {
+	text-align: center;
+}
+#checkout_heading {
+	text-align: center;
+}
+#cart_info_div {
+	/* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+	height: 300px;
+	margin-top: 20px;
+	padding: 10px;
+}
+.product_info {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+}
+#checkout_button_div {
+	display: flex;
+	justify-content: center;
+	margin: 40px 0;
+  }
+  
+  #checkout_button {
+	background-color: black;
+	color: white;
+	border: none;
+	padding: 15px 40px;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+  }
+  
+  #checkout_button h3 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: 1px;
+  }
+  
+  #checkout_button:hover {
+	background-color: #218838;
+	transform: scale(1.05);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  #checkout_button:active {
+	transform: scale(0.98);
+	background-color: #0a5ea8;
+  }
+  

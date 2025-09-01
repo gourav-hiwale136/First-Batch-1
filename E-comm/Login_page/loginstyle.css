@@ -1,0 +1,190 @@
+/* Reset + base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fef7fc, #f3f3fc);
+    color: #400029;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Nav Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #800040;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-links .active {
+    color: #800040;
+  }
+  
+  /* Main Content */
+  .login-box {
+    max-width: 500px;
+    margin: 60px auto;
+    text-align: center;
+  }
+  
+  .welcome-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #800040;
+  }
+  
+  #login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Input Groups */
+  .input-group {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  
+  .icon {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 16px;
+    font-size: 16px;
+    color: #aaa;
+  }
+  
+  /* Remember / Forgot */
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  /* Toggle */
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .toggle-container input {
+    display: none;
+  }
+  
+  .toggle {
+    width: 38px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    transition: background 0.3s;
+  }
+  
+  .toggle::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .toggle-container input:checked + .toggle {
+    background-color: #800040;
+  }
+  
+  .toggle-container input:checked + .toggle::before {
+    transform: translateX(18px);
+  }
+  
+  .forgot-link {
+    text-decoration: none;
+    color: #800040;
+    font-weight: 500;
+  }
+  
+  /* Sign In Button */
+  .sign-in-btn {
+    background-color: #800040;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .sign-in-btn:hover {
+    background-color: #5c0030;
+  }
+  
+  .sign-in-btn span {
+    margin-left: 10px;
+  }
+  
+  /* Bottom Text */
+  .bottom-text {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+  
+  .bottom-text a {
+    color: #800040;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
