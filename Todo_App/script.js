@@ -19,7 +19,7 @@ function getData() {
 
   todo_arr.push(todo_obj);
   localStorage.setItem("array", JSON.stringify(todo_arr));
-  console.log(todo_arr);
+  // console.log(todo_arr);
 
   display(todo_arr);
 }
@@ -47,6 +47,9 @@ function display(data) {
   }
 }
 
-function deletevalue() {
-  event.target.parentNode.remove();
+function deletevalue(index) {
+  todo_arr.splice(index, 1); 
+  localStorage.setItem("array", JSON.stringify(todo_arr)); 
+  display(todo_arr); 
 }
+
