@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Data</title>
+    <link rel="stylesheet" href="../Doctor_Reports/style.css">
+</head>
+<body>
+
+    <h1>Hospital-Doctors Record</h1>
+
+    <div>
+        <form id="doctorForm">
+            <label>Name</label>
+            <input id="name" type="text" placeholder="Enter your Name">
+
+            <label>Doctor ID</label>
+            <input id="doctor_id" type="text" placeholder="Enter your id">
+
+            <label>Specialization</label>
+            <select id="Specialization">
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="ENT">ENT</option>
+                <option value="Dentist">Dentist</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="COVID">COVID</option>
+            </select>
+
+            <label>Experience</label>
+            <input id="Experience" type="text">
+
+            <label>Email Address</label>
+            <input id="Email" type="text" placeholder="Enter your Email">
+
+            <label>Mobile Number</label>
+            <input id="Mobile" type="text">
+
+            <br>
+            <input type="submit" value="Add Doctor">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Doctor ID</th>
+                    <th>Specialization</th>
+                    <th>Experience (Years)</th>
+                    <th>Email Address</th>
+                    <th>Mobile Number</th>
+                    <th>Role</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="doctorTableBody"></tbody>
+        </table>
+    </div>
+
+</body>
+
+<script src="../Doctor_Reports/script.js"></script>
+</html>
